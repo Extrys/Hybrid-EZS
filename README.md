@@ -9,6 +9,7 @@ giving in this way a better performance and architecture to your MonoBehaviour b
 <summary>Table Of Contents</summary>
 
   - [Introduction](#introduction)
+  - [Features](#features)
 
 </details>
 
