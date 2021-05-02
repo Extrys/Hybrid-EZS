@@ -1,4 +1,4 @@
-# Hybrid-EZS
+# Hybrid-EZS    (WIP Readme)
 
 Welcome!</br>
 This repository has been created for help to streamline the transition from MonoBehaviour to DOTS in a simple and modular way , 
@@ -38,3 +38,7 @@ A few features have been made to avoid the sometimes excesive code quantity need
 
 - Easy System Injection
   - Offers a super-duper easy way to create a system with custom depencences, for example a scriptable object that you can configute on the fly while system runs
+
+
+## Installation
+WIP (currently is a unity package)
