@@ -37,4 +37,4 @@ A few features have been made to avoid the sometimes excesive code quantity need
   - Make an entity be referenced by other entities by creating automatic entity dynamic buffers from inspector
 
 - Easy System Injection
-  - Offers a super-duper easy way to create a custom running system with custom depencences, for example a scriptable object that you can configute on the fly while system runs
+  - Offers a super-duper easy way to create a system with custom depencences, for example a scriptable object that you can configute on the fly while system runs
