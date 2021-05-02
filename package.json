@@ -1,0 +1,26 @@
+{
+  "name": "com.squirrelbytes.ezs",
+  "version": "1.0.0",
+  "displayName": "Hybrid EZS",
+  "description": "Streamlines the transition from MonoBehaviour to DOTS\nin an extremely simple, modular and efficient way.",
+  "unity": "2019.3",
+  "keywords": [
+    "dots",
+    "ecs",
+    "ezs",
+    "hybrid",
+    "easy",
+    "monobehaviour",
+    "entity",
+    "entities"
+  ],
+  "author": {
+    "name": "Extrys",
+    "email": "extrys@squirrel-bytes.com",
+    "url": "https://github.com/Extrys"
+  },
+  "type": "template",
+  "dependencies": {
+    "com.unity.entities": ""
+  }
+}
