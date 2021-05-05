@@ -147,7 +147,7 @@ But... we have not entities yet...
 
 Here comes the **Entity Injector** to the rescue!
 
-### EntityInjector
+### Entity Injector
 
 
 
