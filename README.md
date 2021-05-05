@@ -1,9 +1,10 @@
 # Hybrid-EZS    (WIP Readme)
 
-Welcome!</br>
-This repository has been created for help to streamline the transition from MonoBehaviour to DOTS in a simple and modular way , 
-making the ECS Hybridation much easer for the developer who works with Monobehaviours, 
-giving in this way a better performance and architecture to your MonoBehaviour based projects
+Welcome!
+
+This repository has been created for help to streamline the transition from MonoBehaviour to DOTS in a simple and modular way  
+making the ECS Hybridation much easer for the developer who works with Monobehaviours  
+and giving in this way a better performance and architecture to your MonoBehaviour based projects  
 
 <details>
 <summary>Table Of Contents</summary>
@@ -15,11 +16,12 @@ giving in this way a better performance and architecture to your MonoBehaviour b
 
 
 ## Introduction
-Usually the terms ECS and DOTS are confusing for new developers or for experienced ones with a strong OOP mindset, 
-other know about ECS and DOTS but are not sure how to port their project, there are also large projects that would be a nightmare to port to ECS, and let alone DOTS.
+- Usually the terms ECS and DOTS are confusing for new developers or for experienced ones with a strong OOP mindset  
+- Other developers know about ECS and DOTS but are not sure how to port their projects  
+- There are also large projects that would be a nightmare to port to ECS, and let alone DOTS.
 
-This project has been created to solve most of these problems, focusing on offering a much smoother and faster workflow to allow working with Monobehaviours and entities at the same time in a hybrid way.
-
+This project has been created to solve most of these problems  
+by focusing on offering a much smoother and faster workflow to work with Monobehaviours and entities at the same time in a hybrid way.
 
 ## Features
 A few features have been made to avoid the sometimes excesive code quantity needed to work with ECS and conversions, among others, the most important are:
@@ -41,39 +43,115 @@ A few features have been made to avoid the sometimes excesive code quantity need
 
 
 ## Installation
-Easy!</br>
+Easy!  
 
 
 
-Window > Package Manager > + > Add package from git URL... > ``com.squirrelbytes.ezs``</br>
+Window > Package Manager > + > Add package from git URL... > ``com.squirrelbytes.ezs``  
 
-if that doesnt works then...</br>
+if that doesnt works then...  
 
-Window > Package Manager > + > Add package from git URL... > ``https://github.com/Extrys/Hybrid-EZS.git``</br>
-
-
-![HowToInstall](https://user-images.githubusercontent.com/38926085/117202445-1d47d280-adee-11eb-9d8d-33ae2d93b749.png)
+Window > Package Manager > + > Add package from git URL... > ``https://github.com/Extrys/Hybrid-EZS.git``  
 
 
-Now just wait a few seconds and its ready to use!</br>
+![HowToInstall](https://user-images.githubusercontent.com/38926085/117202445-1d47d280-adee-11eb-9d8d-33ae2d93b749.png)  
+
+
+Now just wait a few seconds and its ready to use!  
 
 
 
 
 ## Basic Usage
-Once everything is ready to start using the EZS Hybrid workflow, you might want to start using it, otherwise I don't know what you're doing here!</br>
+Once everything is ready to start using the EZS Hybrid workflow, you might want to start using it, otherwise I don't know what you're doing here!  
 
-Lets start with a basic example!</br>
-The EZ Cube</br>
-![GIF 05-05-2021 23-09-52](https://user-images.githubusercontent.com/38926085/117209900-4b7de000-adf7-11eb-919e-1dc979b13acf.gif)</br>
+Lets start with a basic example!  
 
-I know is the best thing you have seen ever but lets get to the point!</br>
-What we have here is a Cube with a "CoolMovement" Script attached</br>
-![image](https://user-images.githubusercontent.com/38926085/117210087-86801380-adf7-11eb-8324-eb9b664a550f.png)</br>
-Here we have some variables here that makes our cube move like this</br>
-<b>Current Oscilation Time:</b> its a number that changes a lot</br>
-<b>Oscilation Speed:</b> How fast it moves</br>
-<b>Oscilation Amplitude Multiplier:</b> How far it moves</br>
-<b>Rotation Speed:</b> How quickly he starts to get dizzy</br>
+The EZ Cube  
+
+![GIF 05-05-2021 23-24-36](https://user-images.githubusercontent.com/38926085/117211305-1d999b00-adf9-11eb-9915-8c8b73a9310a.gif)  
+
+I know is the best thing you have seen ever but lets get to the point!
+
+What we have here is a Cube with a "CoolMovement" Script attached
+
+Here we have some variables here that makes our cube move like this
+
+> **Current Oscilation Time:**  
+>   Its a number that changes a lot  
+>   
+> **Oscilation Speed:**  
+>   How fast it moves  
+>   
+> **Oscilation Amplitude Multiplier:**  
+>   How far it moves  
+>   
+> **Rotation Speed:**  
+>   How quickly he starts to get dizzy  
+
+And this script is a MonoBehaviour using a fantastic and wonderful super fast Update [I'm being sarcastic, of course].
+
+```csharp
+public class CoolMovement : MonoBehaviour
+{
+	public float currentOscilationTime;
+	public float oscilationSpeed;
+	public float oscilationAmplitude;
+	public float rotationSpeed;
+
+	void Update()
+	{
+		currentOscilationTime += oscilationSpeed * Time.deltaTime;
+		transform.position = new Vector3(0, Mathf.Sin(currentOscilationTime) * oscilationAmplitude, 0);
+		transform.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+	}
+}
+```
+
+Ok so lets make this MonoBehaviour use a System instead, shall we?
+
+```csharp
+public class CoolMovement : MonoBehaviour
+{
+	public float currentOscilationTime;
+	public float oscilationSpeed;
+	public float oscilationAmplitude;
+	public float rotationSpeed;
+
+	public void DoUpdate() //Changed the name
+	{
+		currentOscilationTime += oscilationSpeed * Time.deltaTime;
+		transform.position = new Vector3(0, Mathf.Sin(currentOscilationTime) * oscilationAmplitude, 0);
+		transform.rotation *= Quaternion.Euler(0, rotationSpeed * Time.deltaTime, 0);
+	}
+}
+
+public class CoolMovementSystem : SystemBase
+{
+	protected override void OnUpdate()
+	{
+		Entities
+			.ForEach((CoolMovement coolMovement) => coolMovement.DoUpdate())
+			.WithoutBurst()  //Because MonoBehaviours can not be Bursted
+			.Run(); //To run in main thread 
+	}
+}
+```
+Ok done! :D
+
+We just changed the Update for "DoUpdate" so we dont use the Unity one
+
+If we hit play right now it will ***not*** work  
+Because the Entities.ForEach just work on entities with "CoolMovement"
+But... we have not entities yet...
+
+Here comes the **Entity Injector** to the rescue!
+
+### EntityInjector
+
+
+
+
+
 (WIP)
 
