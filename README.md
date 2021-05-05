@@ -65,11 +65,15 @@ Once everything is ready to start using the EZS Hybrid workflow, you might want 
 
 Lets start with a basic example!</br>
 The EZ Cube</br>
-![GIF 05-05-2021 23-07-01](https://user-images.githubusercontent.com/38926085/117209504-b4b12380-adf6-11eb-86e3-dafbbe33eb4b.gif)</br>
+![GIF 05-05-2021 23-09-52](https://user-images.githubusercontent.com/38926085/117209900-4b7de000-adf7-11eb-919e-1dc979b13acf.gif)</br>
 
 I know is the best thing you have seen ever but lets get to the point!</br>
 What we have here is a Cube with a "CoolMovement" Script attached</br>
-![image](https://user-images.githubusercontent.com/38926085/117209002-1624c280-adf6-11eb-9da4-bfe23064671c.png)
-Here we have the oscila
+![image](https://user-images.githubusercontent.com/38926085/117210087-86801380-adf7-11eb-8324-eb9b664a550f.png)</br>
+Here we have some variables here that makes our cube move like this</br>
+<b>Current Oscilation Time:</b> its a number that changes a lot</br>
+<b>Oscilation Speed:</b> How fast it moves</br>
+<b>Oscilation Amplitude Multiplier:</b> How far it moves</br>
+<b>Rotation Speed:</b> How quickly he starts to get dizzy</br>
 (WIP)
 
