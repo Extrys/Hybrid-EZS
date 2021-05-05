@@ -41,4 +41,27 @@ A few features have been made to avoid the sometimes excesive code quantity need
 
 
 ## Installation
-WIP (currently is a unity package)
+Easy!</br>
+
+
+
+Window > Package Manager > + > Add package from git URL... > ``com.squirrelbytes.ezs``</br>
+
+if that doesnt works then...</br>
+
+Window > Package Manager > + > Add package from git URL... > ``https://github.com/Extrys/Hybrid-EZS.git``</br>
+
+
+![HowToInstall](https://user-images.githubusercontent.com/38926085/117200871-45cecd00-adec-11eb-9e63-c3bf7088c1db.png)
+
+
+Now just wait a few seconds and its ready to use!</br>
+
+
+
+
+## Basic Usage
+Once everything is ready to start using the EZS Hybrid workflow, you might want to start using it, otherwise I don't know what you're doing here!</br>
+
+
+
