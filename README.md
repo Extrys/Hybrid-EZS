@@ -63,5 +63,13 @@ Now just wait a few seconds and its ready to use!</br>
 ## Basic Usage
 Once everything is ready to start using the EZS Hybrid workflow, you might want to start using it, otherwise I don't know what you're doing here!</br>
 
+Lets start with a basic example!</br>
+The EZ Cube</br>
+![GIF 05-05-2021 23-07-01](https://user-images.githubusercontent.com/38926085/117209504-b4b12380-adf6-11eb-86e3-dafbbe33eb4b.gif)</br>
+
+I know is the best thing you have seen ever but lets get to the point!</br>
+What we have here is a Cube with a "CoolMovement" Script attached</br>
+![image](https://user-images.githubusercontent.com/38926085/117209002-1624c280-adf6-11eb-9da4-bfe23064671c.png)
+Here we have the oscila
 (WIP)
 
