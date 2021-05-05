@@ -21,6 +21,6 @@
   },
   "type": "template",
   "dependencies": {
-    "com.unity.entities": ""
+    "com.unity.entities": "0.14.0"
   }
 }
