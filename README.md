@@ -52,7 +52,7 @@ if that doesnt works then...</br>
 Window > Package Manager > + > Add package from git URL... > ``https://github.com/Extrys/Hybrid-EZS.git``</br>
 
 
-![HowToInstall](https://user-images.githubusercontent.com/38926085/117200871-45cecd00-adec-11eb-9e63-c3bf7088c1db.png)
+![HowToInstall](https://user-images.githubusercontent.com/38926085/117202445-1d47d280-adee-11eb-9d8d-33ae2d93b749.png)
 
 
 Now just wait a few seconds and its ready to use!</br>
