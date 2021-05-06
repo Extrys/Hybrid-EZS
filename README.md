@@ -163,7 +163,7 @@ As you see it has 3 lists, each one is for different purpouses that will be expl
 but for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:  
 ![image](https://user-images.githubusercontent.com/38926085/117226852-d66dd300-ae15-11eb-8845-71843faa4e9c.png)
 
-Congratulations you have added a monobehaviour to our future entity
+Congratulations you have added a monobehaviour to your future entity
 
 You can press play, enjoy your spinning cube, sell the game and get rich!
 
