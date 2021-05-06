@@ -175,7 +175,7 @@ We have been using this component just to make an entity having this monobehavio
 just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game  
 but most of the times the performance gain is not so heavy, unless you start using it correctly
 
-So this is not the end, now the next step is segregating the data and bit a bit, desintegrate the OnUpdate until all the logic is inside the system and the references are components from the gameobject
+So this is not the end, now the next step is to segregate the data and disintegrate the OnUpdate bit a bit until all the logic is inside the system and the references are components of the gameobject to conver them easily to data.
 
 I will be doing that transition later so you can see how easy it is
 
