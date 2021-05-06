@@ -96,7 +96,7 @@ Here we have some variables here that makes our cube move like this
 > **Rotation Speed:**  
 >   How quickly he starts to get dizzy  
 
-And this script is a MonoBehaviour using a fantastic and wonderful super fast Update [I'm being sarcastic, of course].
+And this script is a MonoBehaviour using a fantastic and wonderful super fast Update [*I'm being sarcastic, of course*].
 
 ```csharp
 public class CoolMovement : MonoBehaviour
