@@ -16,7 +16,7 @@ namespace HybridEZS
 
 		public Object[] objects;
 
-		public ComponentDataAuthorCollection dataAuthors = new ComponentDataAuthorCollection();
+		public List<ComponentDataAuthor> dataAuthors = new List<ComponentDataAuthor>();
 
 		[SerializeField] List<EntityInjector> referencedEntityInjectors;
 
