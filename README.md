@@ -156,11 +156,11 @@ Here comes the **Entity Injector** to the rescue!
 
 ### Injecting an Entity
 
-This is the main component that defines the workflow!
+This is the main component that defines the workflow!  
 ![image](https://user-images.githubusercontent.com/38926085/117226660-6b240100-ae15-11eb-87d6-4931e6ed0838.png)
 
-As you see it has 3 lists, each one is for different purpouses that will be eplained easier a little bit later in this section
-for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:
+As you see it has 3 lists, each one is for different purpouses that will be eplained easier a little bit later in this section  
+for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:  
 ![image](https://user-images.githubusercontent.com/38926085/117226852-d66dd300-ae15-11eb-8845-71843faa4e9c.png)
 
 Congratulations you have added a monobehaviour to our future entity
@@ -172,7 +172,7 @@ But wait there is more...
 What about moving finally to DOTS?
 
 We have been using this component just to make an entity having this monobehaviour attached as component, so we can query it in systems, is for that it works now
-just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game
+just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game  
 but most of the times the performance gain is not so heavy, unless you start using it correctly
 
 So this is not the end, now the next step is segregating the data and bit a bit, desintegrate the OnUpdate until all the logic is inside the system and the references are components from the gameobject
