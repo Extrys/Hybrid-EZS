@@ -159,8 +159,8 @@ Here comes the **Entity Injector** to the rescue!
 This is the main component that defines the workflow!  
 ![image](https://user-images.githubusercontent.com/38926085/117226660-6b240100-ae15-11eb-87d6-4931e6ed0838.png)
 
-As you see it has 3 lists, each one is for different purpouses that will be eplained easier a little bit later in this section  
-for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:  
+As you see it has 3 lists, each one is for different purpouses that will be explained easier a little bit later in other section  
+but for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:  
 ![image](https://user-images.githubusercontent.com/38926085/117226852-d66dd300-ae15-11eb-8845-71843faa4e9c.png)
 
 Congratulations you have added a monobehaviour to our future entity
