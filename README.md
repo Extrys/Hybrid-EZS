@@ -175,9 +175,15 @@ We have been using this component just to make an entity having this monobehavio
 just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game
 but most of the times the performance gain is not so heavy, unless you start using it correctly
 
-lets take apart this section to start with something more technical and a little more advanced usages on this component
+So this is not the end, now the next step is segregating the data and bit a bit, desintegrate the OnUpdate until all the logic is inside the system and the references are components from the gameobject
+
+I will be doing that transition later so you can see how easy it is
+
+Lets take apart this section to start with something more technical and a little more advanced usages on this component
+
 
 ## Entity Injector
+![image](https://user-images.githubusercontent.com/38926085/117227835-0322ea00-ae18-11eb-9197-ee9870b8c1b7.png)
 
 (WIP)
 
