@@ -171,7 +171,7 @@ But wait there is more...
 
 What about moving finally to DOTS?
 
-We have been using this component just to make an entity having this monobehaviour attached as component, so we can query it in systems, is for that it works now
+We have been using this component just to make an entity having this monobehaviour attached as component, so we can query it in systems, is for that it works now  
 just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game  
 but most of the times the performance gain is not so heavy, unless you start using it correctly
 
