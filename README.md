@@ -62,7 +62,7 @@ Now just need to configure the script Execution order and put "HybridEZS.EntityI
 Its easy too just follow the next image  
 ![ChangeExecutionOrder](https://user-images.githubusercontent.com/38926085/117226383-d6b99e80-ae14-11eb-9ef6-de2c26478cb1.png)
 
-Apply the changes and wait a few seconds...  
+Apply the changes and wait a few seconds and...  
 
 ***Its ready to use!***
 
