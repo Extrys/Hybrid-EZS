@@ -16,8 +16,11 @@ and giving in this way a better performance and architecture to your MonoBehavio
 
 
 ## Introduction
-- Usually the terms ECS and DOTS are confusing for new developers or for experienced ones with a strong OOP mindset  
+- Usually the terms ECS and DOTS are confusing for new developers  
+or for experienced ones with a strong OOP mindset  
+
 - Other developers know about ECS and DOTS but are not sure how to port their projects  
+
 - There are also large projects that would be a nightmare to port to ECS, and let alone DOTS.
 
 This project has been created to solve most of these problems  
