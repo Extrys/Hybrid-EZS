@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using System.Security.Cryptography.X509Certificates;
+using Unity.Entities;
 using UnityEngine;
 using Object = UnityEngine.Object;
 using System.Collections.Generic;
@@ -46,6 +47,8 @@ namespace HybridEZS
 		}
 
 		public bool ContainsObject<T>(T instance) where T : Object => objects.Contains(instance);
+
+		void OnDestroy() => manager.DestroyEntity(PrimaryEntity);
 	}
 
 	public struct EntityHolderElementData : IBufferElementData
