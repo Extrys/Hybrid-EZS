@@ -190,5 +190,26 @@ Lets take apart this section to start with something more technical and a little
 ## Entity Injector
 ![image](https://user-images.githubusercontent.com/38926085/117227835-0322ea00-ae18-11eb-9197-ee9870b8c1b7.png)
 
+This is the Entity injector monobehaviour component
+Itrs preatty easy, it just injects an entity with the things added to the lists
+
+Each list is for different kind of components
+
+we have
+
+**Objects:**  
+You can pue here ANYTHING you want and the generated entity will just have it
+
+**Autoring Data:**  
+This lists is mainly to attach custom IComponentData to entities from the AutoringComponent who are added to the list
+(We will talk about this in an easier way in the next section)
+
+**Entity Injectors**  
+Here you can reference more entity inyectors, in this way, the injected entity will index("have") also a EntityBuffer
+(We will talk about this in an easier way in a later section)
+
+**Blob Assets:**  (Soon)
+
+
 (WIP)
 
