@@ -23,6 +23,7 @@ and giving in this way a better performance and architecture to your MonoBehavio
   	- [Entity-Injected BlobAssets](#Entity-Injected-BlobAssets) (wip)
   - [EZ System Injection](#EZ-System-Injection) (wip)
   	- [Custom System Injection Example](#Custom-System-Injection-Example) (wip)
+  	- [Authoring Systems In RealTime with Scriptable Objects](#System-Injector) (wip)
   	- [System Injector](#System-Injector) (wip)
   - [EZ BlobAssets Conversion](#EZ-BlobAssets-Conversion) (wip)
 
