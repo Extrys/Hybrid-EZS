@@ -15,6 +15,17 @@ and giving in this way a better performance and architecture to your MonoBehavio
 
   - [Introduction](#introduction)
   - [Features](#features)
+  - [Installation](#installation)
+  - [Basic Usage](#basic-usage)
+  - [Entity Injector](#entity-injector) (wip)
+  	- [Entity-Injected Objects](#Entity-Injected-Objects) (wip)
+  	- [Entity-Injected Authored IComponentData](#Entity-Injected-Authored-IComponentData) (wip)
+  	- [Entity-Injected EntityBuffer](#Entity-Injected-EntityBuffer) (wip)
+  	- [Entity-Injected BlobAssets](#Entity-Injected-BlobAssets) (wip)
+  - [EZ System Injection](#EZ-System-Injection) (wip)
+  	- [Custom System Injection Example](#Custom-System-Injection-Example) (wip)
+  	- [System Injector](#System-Injector) (wip)
+  - [EZ BlobAssets Conversion](#EZ-BlobAssets-Conversion) (wip)
 
 </details>
 
