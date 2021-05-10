@@ -10,8 +10,7 @@ and giving in this way a better performance and architecture to your MonoBehavio
 
 **As i have a slight level of dyslextia, im sory before hand for any typo you may find, feel free to contribute fixing them if you find any!**
 
-<details>
-<summary>Table Of Contents</summary>
+## Table Of Contents
 
   - [Introduction](#introduction)
   - [Features](#features)
@@ -27,10 +26,8 @@ and giving in this way a better performance and architecture to your MonoBehavio
   	- [System Injector](#System-Injector) (wip)
   - [EZ BlobAssets Conversion](#EZ-BlobAssets-Conversion) (wip)
 
-</details>
 
-
-## Introduction
+# Introduction
 - Usually the terms ECS and DOTS are confusing for new developers  
 or for experienced ones with a strong OOP mindset  
 
@@ -41,7 +38,7 @@ or for experienced ones with a strong OOP mindset
 This project has been created to solve most of these problems  
 by focusing on offering a much smoother and faster workflow to work with Monobehaviours and entities at the same time in a hybrid way.
 
-## Features
+# Features
 A few features have been made to avoid the sometimes excesive code quantity needed to work with ECS and conversions, among others, the most important are:
 
 - Custom Entity Injector
@@ -60,7 +57,7 @@ A few features have been made to avoid the sometimes excesive code quantity need
   - Offers a super-duper easy way to create a system with custom depencences, for example a scriptable object that you can configute on the fly while system runs
 
 
-## Installation
+# Installation
 Easy!  
 
 
@@ -87,7 +84,7 @@ Apply the changes and wait a few seconds and...
 
 
 
-## Basic Usage
+# Basic Usage
 Once everything is ready to start using the EZS Hybrid workflow, you might want to start using it, otherwise I don't know what you're doing here!  
 
 Lets start with a basic example!  
@@ -172,7 +169,7 @@ But... we have not entities yet...
 
 Here comes the **Entity Injector** to the rescue!
 
-### Injecting an Entity
+## Injecting an Entity
 
 This is the main component that defines the workflow!  
 ![image](https://user-images.githubusercontent.com/38926085/117226660-6b240100-ae15-11eb-87d6-4931e6ed0838.png)
@@ -200,7 +197,7 @@ I will be doing that transition later so you can see how easy it is
 Lets take apart this section to start with something more technical and a little more advanced usages on this component
 
 
-## Entity Injector
+# Entity Injector
 ![image](https://user-images.githubusercontent.com/38926085/117227835-0322ea00-ae18-11eb-9197-ee9870b8c1b7.png)
 
 This is the Entity injector monobehaviour component
