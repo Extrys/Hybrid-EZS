@@ -6,7 +6,9 @@ Welcome!
 
 This repository has been created for help to streamline the transition from MonoBehaviour to DOTS in a simple and modular way  
 making the ECS Hybridation much easer for the developer who works with Monobehaviours  
-and giving in this way a better performance and architecture to your MonoBehaviour based projects  
+and giving in this way a better performance and architecture to your MonoBehaviour based projects
+
+**As i have a slight level of dyslextia, im sory before hand for any typo you may find, feel free to contribute fixing them if you find any!**
 
 <details>
 <summary>Table Of Contents</summary>
@@ -193,12 +195,10 @@ Lets take apart this section to start with something more technical and a little
 This is the Entity injector monobehaviour component
 Itrs preatty easy, it just injects an entity with the things added to the lists
 
-Each list is for different kind of components
-
-we have
+Each list is for different kind of components, it has:
 
 **Objects:**  
-You can pue here ANYTHING you want and the generated entity will just have it
+You can put here ANYTHING you want and the generated entity will just have it
 
 **Autoring Data:**  
 This lists is mainly to attach custom IComponentData to entities from the AutoringComponent who are added to the list
