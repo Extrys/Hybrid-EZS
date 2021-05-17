@@ -31,7 +31,7 @@ namespace HybridEZS
 
 		public void AddReferencedPrimaryEntities()
 		{
-			if (referencedEntityInjectors != null && referencedEntityInjectors.Count == 0)
+			if (referencedEntityInjectors != null && referencedEntityInjectors.Count > 0)
 			{
 				NativeArray<EntityHolderElementData> entities = new NativeArray<EntityHolderElementData>(referencedEntityInjectors.Select(x => new EntityHolderElementData { entity = x.PrimaryEntity }).ToArray(), Allocator.Persistent);
 				manager.AddBuffer<EntityHolderElementData>(PrimaryEntity).AddRange(entities);
