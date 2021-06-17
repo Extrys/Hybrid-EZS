@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/38926085/117296866-d30a3400-ae75-11eb-8cea-07af9eea4d5b.png">
 </p>
+<p align="center"><a href="https://openupm.com/packages/com.squirrelbytes.ezs/"><img src="https://img.shields.io/npm/v/com.squirrelbytes.ezs?label=openupm&amp;registry_uri=https://package.openupm.com" /></a></p>
 
 Welcome!
 
