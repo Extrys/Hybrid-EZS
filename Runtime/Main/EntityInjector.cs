@@ -48,7 +48,7 @@ namespace HybridEZS
 
 		public bool ContainsObject<T>(T instance) where T : Object => objects.Contains(instance);
 
-		void OnDestroy() => manager.DestroyEntity(PrimaryEntity);
+		void OnDestroy() => World.DefaultGameObjectInjectionWorld?.EntityManager.DestroyEntity(PrimaryEntity);
 	}
 
 	public struct EntityHolderElementData : IBufferElementData
