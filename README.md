@@ -7,7 +7,7 @@ Welcome!
 
 This repository has been created for help to streamline the transition from MonoBehaviour to DOTS in a simple and modular way  
 making the ECS Hybridation much easer for the developer who works with Monobehaviours  
-and giving in this way a better performance and architecture to your MonoBehaviour based projects
+and giving in this way a better performance and architecture to your MonoBehaviour based projects.
 
 **As i have a slight level of dyslextia, im sory before hand for any typo you may find, feel free to contribute fixing them if you find any!**
 
