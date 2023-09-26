@@ -163,7 +163,7 @@ public class CoolMovementSystem : SystemBase
 ```
 Ok done! :D
 
-We just changed the "Update" for "DoUpdate" so we dont use the Unity one
+We just changed the "Update" for "DoUpdate" so we dont use the Unity one.
 
 If we hit play right now it will ***not*** work  
 Because the Entities.ForEach just work on entities with "CoolMovement"
@@ -180,7 +180,7 @@ As you see it has 3 lists, each one is for different purpouses that will be expl
 but for now just Drag N Drop the CoolMovement Component to the EntityInjector in this way:  
 ![image](https://user-images.githubusercontent.com/38926085/117226852-d66dd300-ae15-11eb-8845-71843faa4e9c.png)
 
-Congratulations you have added a monobehaviour to your future entity
+Congratulations you have added a monobehaviour to your future entity.
 
 You can press play, enjoy your spinning cube, sell the game and get rich!
 
@@ -188,35 +188,34 @@ But wait there is more...
 
 What about moving finally to DOTS?
 
-We have been using this component just to make an entity having this monobehaviour attached as component, so we can query it in systems, is for that it works now  
-just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game  
-but most of the times the performance gain is not so heavy, unless you start using it correctly
+We have been using this component just to make an entity having this monobehaviour attached as component, so we can query it in systems, is for that it works now just hybridizing the game will give you a little bit of performance, depending on the "Update" usage you have in your game  
+but most of the times the performance gain is not so heavy, unless you start using it correctly.
 
 So this is not the end, now the next step is to segregate the data and disintegrate the OnUpdate bit a bit until all the logic is inside the system and the references are components of the gameobject to conver them easily to data.
 
-I will be doing that transition later so you can see how easy it is
+I will be doing that transition later so you can see how easy it is.
 
-Lets take apart this section to start with something more technical and a little more advanced usages on this component
+Lets take apart this section to start with something more technical and a little more advanced usages on this component.
 
 
 # Entity Injector
 ![image](https://user-images.githubusercontent.com/38926085/117227835-0322ea00-ae18-11eb-9197-ee9870b8c1b7.png)
 
 This is the Entity injector monobehaviour component
-Itrs preatty easy, it just injects an entity with the things added to the lists
+Itrs preatty easy, it just injects an entity with the things added to the lists.
 
 Each list is for different kind of components, it has:
 
 **Objects:**  
-You can put here ANYTHING you want and the generated entity will just have it
+You can put here ANYTHING you want and the generated entity will just have it.
 
 **Autoring Data:**  
 This lists is mainly to attach custom IComponentData to entities from the AutoringComponent who are added to the list
-(We will talk about this in an easier way in the next section)
+(We will talk about this in an easier way in the next section).
 
 **Entity Injectors**  
 Here you can reference more entity inyectors, in this way, the injected entity will index("have") also a EntityBuffer
-(We will talk about this in an easier way in a later section)
+(We will talk about this in an easier way in a later section).
 
 **Blob Assets:**  (Soon)
 
